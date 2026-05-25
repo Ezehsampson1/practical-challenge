@@ -28,7 +28,9 @@ variable "instance_type" {
   default     = "t3.small"
 }
 
+
 variable "public_key_path" {
   description = "Path to SSH public key"
-  default     = "~/.ssh/id_rsa.pub"
+  type        = string
+  default     = "/home/user/.ssh/id_rsa.pub"
 }
