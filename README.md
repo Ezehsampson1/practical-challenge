@@ -1,20 +1,6 @@
 # 🚀 DevOps Engineer Practical Challenge
 ## Production-Ready Application Deployment
 
----
-
-## 📋 Table of Contents
-- [Architecture Overview](#architecture-overview)
-- [Tech Stack](#tech-stack)
-- [Prerequisites](#prerequisites)
-- [Deployment Steps](#deployment-steps)
-- [CI/CD Pipeline](#cicd-pipeline)
-- [Monitoring & Logging](#monitoring--logging)
-- [Design Decisions](#design-decisions)
-- [Assumptions](#assumptions)
-- [Limitations & Improvements](#limitations--improvements)
-
----
 
 ## 🏗️ Architecture Overview
 
