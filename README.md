@@ -7,7 +7,7 @@
 This project deploys a containerized Python Flask web application
 on AWS EC2 using a fully automated DevOps pipeline.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |-----------|------------|
