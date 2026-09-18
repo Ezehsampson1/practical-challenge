@@ -1,47 +1,11 @@
-# 🚀 DevOps Engineer Practical Challenge
+# DevOps Engineer Practical Challenge
 ## Production-Ready Application Deployment
 
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 This project deploys a containerized Python Flask web application
 on AWS EC2 using a fully automated DevOps pipeline.
-
-┌─────────────────────────────────────────────────┐
-│                   GitHub Repo                   │
-│         (Source Code + Jenkinsfile)             │
-└─────────────────┬───────────────────────────────┘
-│ triggers
-▼
-┌─────────────────────────────────────────────────┐
-│              Jenkins CI/CD Pipeline             │
-│   Build → Test → Deploy → Verify                │
-└─────────────────┬───────────────────────────────┘
-│ deploys to
-▼
-┌─────────────────────────────────────────────────┐
-│                  AWS (us-east-1)                │
-│                                                 │
-│   VPC (10.0.0.0/16)                             │
-│   └── Public Subnet (10.0.1.0/24)               │
-│       └── EC2 t3.small                          │
-│           ├── Docker Container (Flask App :5000)│
-│           ├── Jenkins Server (:8080)            │
-│           └── CloudWatch Agent                  │
-│                                                 │
-│   Security Group                                │
-│   ├── Port 22   (SSH)                           │
-│   ├── Port 5000 (Flask App)                     │
-│   └── Port 8080 (Jenkins)                       │
-└─────────────────────────────────────────────────┘
-│ monitored by
-▼
-┌─────────────────────────────────────────────────┐
-│             AWS CloudWatch                      │
-│   CPU, Memory, Disk Metrics + App Logs          │
-└─────────────────────────────────────────────────┘
-
----
 
 ## 🛠️ Tech Stack
 
@@ -57,7 +21,7 @@ on AWS EC2 using a fully automated DevOps pipeline.
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 Before deploying, make sure you have:
 
@@ -70,7 +34,7 @@ Before deploying, make sure you have:
 
 ---
 
-## 🚀 Deployment Steps
+## Deployment Steps
 
 ### 1. Clone the Repository
 ```bash
